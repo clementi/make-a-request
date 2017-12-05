@@ -1,3 +1,5 @@
+![Make a request](https://openclipart.org/download/214907/httpRequest.svg)
+
 # Make a Request
 
 ## Introduction
