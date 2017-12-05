@@ -7,7 +7,7 @@ such as JavaScript on Node.js, because there are popular third-party libraries t
 
 One of the languages with the simplest way to make an HTTP request is Groovy, in which you can make a request like this:
 ```groovy
-println("https://httpbin.org/anything".toURL().getText(requestProperties: [Accept: 'application/json']))
+"https://httpbin.org/anything".toURL().getText()
 ```
 
 ## Languages
