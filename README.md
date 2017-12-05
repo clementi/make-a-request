@@ -14,24 +14,24 @@ One of the languages with the simplest way to make an HTTP request is Groovy, in
 
 The following languages have examples:
 
-* Clojure with clj-http
-* CoffeeScript on Node.js
-* CoffeeScript on Node.js with request-promise
-* C# with RestSharp
+* [Clojure](http://clojure.org) with [clj-http](https://github.com/dakrone/clj-http)
+* [CoffeeScript](http://coffeescript.org) on [Node.js](http://nodejs.org)
+* CoffeeScript on Node.js with [request-promise](https://github.com/request/request-promise)
+* [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) with [RestSharp](http://restsharp.org)
 * C#
-* Dart
-* F# with RestSharp
+* [Dart](http://dartlang.org)
+* [F#](https://docs.microsoft.com/en-us/dotnet/fsharp/) with RestSharp
 * F#
-* Go
-* Groovy
-* Haskell with wreq
-* Java with Retrofit
+* [Go](http://golang.org)
+* [Groovy](http://groovy-lang.org)
+* [Haskell](http://haskell.org) with [wreq](http://www.serpentine.com/wreq)
+* [Java](http://www.oracle.com/technetwork/java) with [Retrofit](https://square.github.io/retrofit/)
 * Java
-* JavaScript on Node.js with request-promise
+* [JavaScript](https://www.javascript.com/) on Node.js with request-promise
 * JavaScript on Node.js
-* Nim
-* Python with requests
-* Racket
-* Ruby
-* Scala with scalaj.http
-* TypeScript on Node with request-promise
+* [Nim](https://nim-lang.org)
+* [Python](https://python.org) with [requests](http://docs.python-requests.org)
+* [Racket](https://racket-lang.org)
+* [Ruby](https://ruby-lang.org)
+* [Scala](https://scala-lang.org) with [scalaj-http](https://github.com/scalaj/scalaj-http)
+* [TypeScript](https://www.typescriptlang.org) on Node with request-promise
