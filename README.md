@@ -33,6 +33,7 @@ The following languages have examples:
 * Java
 * [JavaScript](https://www.javascript.com/) on Node.js with request-promise
 * JavaScript on Node.js
+* [Kotlin](http://kotlinlang.org) with [Fuel](https://github.com/kittinunf/fuel)
 * [Nim](https://nim-lang.org)
 * [Python](https://python.org) with [requests](http://docs.python-requests.org)
 * [Racket](https://racket-lang.org)
