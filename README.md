@@ -28,6 +28,7 @@ The following languages have examples:
 * [Groovy](http://groovy-lang.org)
 * [Haskell](http://haskell.org) with [wreq](http://www.serpentine.com/wreq)
 * [Java](http://www.oracle.com/technetwork/java) with [Retrofit](https://square.github.io/retrofit/)
+* Java with [Apache HTTP Components](https://hc.apache.org/)
 * Java
 * [JavaScript](https://www.javascript.com/) on Node.js with request-promise
 * JavaScript on Node.js
