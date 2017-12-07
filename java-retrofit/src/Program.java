@@ -17,7 +17,11 @@ public class Program {
         Call<ResponseBody> call = httpBin.anything();
 
         try {
-            System.out.println(call.execute().body().string());
+            ResponseBody body = call.execute().body();
+
+            if (body != null) {
+                System.out.println(body.string());
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
