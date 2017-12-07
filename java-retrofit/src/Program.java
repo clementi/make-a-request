@@ -14,7 +14,7 @@ public class Program {
 
         HttpBin httpBin = retrofit.create(HttpBin.class);
 
-        Call<ResponseBody> call = httpBin.anything();
+        Call<ResponseBody> call = httpBin.getAnything();
 
         try {
             ResponseBody body = call.execute().body();
@@ -30,6 +30,6 @@ public class Program {
     private interface HttpBin {
         @GET("/anything")
         @Headers("Accept: application/json")
-        Call<ResponseBody> anything();
+        Call<ResponseBody> getAnything();
     }
 }
