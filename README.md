@@ -22,6 +22,7 @@ The following languages have examples:
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) with [RestSharp](http://restsharp.org)
 * C#
 * [Dart](http://dartlang.org)
+* [Erlang](http://erlang.org)
 * [F#](https://docs.microsoft.com/en-us/dotnet/fsharp/) with RestSharp
 * F#
 * [Go](http://golang.org)
