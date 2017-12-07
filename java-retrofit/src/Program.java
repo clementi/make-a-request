@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Program {
     public static void main(String[] args) {
-        Retrofit retrofit = new     Retrofit.Builder()
+        Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://httpbin.org")
                 .build();
 
