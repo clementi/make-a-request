@@ -22,6 +22,7 @@ The following languages have examples:
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) with [RestSharp](http://restsharp.org)
 * C#
 * [Dart](http://dartlang.org)
+* [Elixir](http://elixir-lang.org) with [HTTPotion](https://github.com/myfreeweb/httpotion)
 * [Erlang](http://erlang.org)
 * [F#](https://docs.microsoft.com/en-us/dotnet/fsharp/) with RestSharp
 * F#
