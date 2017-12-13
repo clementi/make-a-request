@@ -1,0 +1,12 @@
+{
+  "name": "node-axios",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./main.js"
+  },
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
+}
