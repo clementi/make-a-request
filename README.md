@@ -17,7 +17,8 @@ One of the languages with the simplest way to make an HTTP request is Groovy, in
 The following languages have examples:
 
 * [Clojure](http://clojure.org) with [clj-http](https://github.com/dakrone/clj-http)
-* [CoffeeScript](http://coffeescript.org) on [Node.js](http://nodejs.org)
+* [CoffeeScript](http://coffeescript.org) on [Node.js](http://nodejs.org) with [axios](https://github.com/axios/axios)
+* CoffeeScript on Node.js
 * CoffeeScript on Node.js with [request-promise](https://github.com/request/request-promise)
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) with [RestSharp](http://restsharp.org)
 * C#
@@ -32,7 +33,7 @@ The following languages have examples:
 * [Java](http://www.oracle.com/technetwork/java) with [Apache HTTP Components](https://hc.apache.org/)
 * Java with [Retrofit](https://square.github.io/retrofit/)
 * Java
-* [JavaScript](https://www.javascript.com/) on Node.js with [axios](https://github.com/axios/axios)
+* [JavaScript](https://www.javascript.com/) on Node.js with axios
 * JavaScript on Node.js with [request-promise](https://github.com/request/request-promise)
 * JavaScript on Node.js
 * [Kotlin](http://kotlinlang.org) with [Fuel](https://github.com/kittinunf/fuel)
