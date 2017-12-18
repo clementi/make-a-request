@@ -32,7 +32,7 @@ The following languages have examples:
 * [Haskell](http://haskell.org) with [wreq](http://www.serpentine.com/wreq)
 * [Java](http://www.oracle.com/technetwork/java) with [Apache HTTP Components](https://hc.apache.org/)
 * Java with [Retrofit](https://square.github.io/retrofit/)
-* Java with the [Vert.x](http://vertx.io') [Web Client](http://vertx.io/docs/vertx-web-client/java)
+* Java with the [Vert.x](http://vertx.io) [Web Client](http://vertx.io/docs/vertx-web-client/java)
 * Java
 * [JavaScript](https://www.javascript.com/) on Node.js with axios
 * JavaScript on Node.js with [request-promise](https://github.com/request/request-promise)
