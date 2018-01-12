@@ -39,7 +39,8 @@ The following languages have examples:
 * JavaScript on Node.js
 * [Kotlin](http://kotlinlang.org) with [Fuel](https://github.com/kittinunf/fuel)
 * [Nim](https://nim-lang.org)
-* [Python](https://python.org) with [requests](http://docs.python-requests.org)
+* [Python](https://python.org) with [aiohttp](http://aiohttp.readthedocs.io)
+* Python with [requests](http://docs.python-requests.org)
 * [Racket](https://racket-lang.org)
 * [Ruby](https://ruby-lang.org)
 * [Scala](https://scala-lang.org) with [scalaj-http](https://github.com/scalaj/scalaj-http)
