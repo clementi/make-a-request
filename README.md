@@ -44,4 +44,5 @@ The following languages have examples:
 * [Racket](https://racket-lang.org)
 * [Ruby](https://ruby-lang.org)
 * [Scala](https://scala-lang.org) with [scalaj-http](https://github.com/scalaj/scalaj-http)
+* Scala with [akka-http](https://akka.io)
 * [TypeScript](https://www.typescriptlang.org) on Node with request-promise
