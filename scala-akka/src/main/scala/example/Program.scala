@@ -2,6 +2,7 @@ package example
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
+import akka.http.scaladsl.model.headers.RawHeader
 import akka.http.scaladsl.model.{HttpMethods, HttpRequest}
 import akka.http.scaladsl.unmarshalling.Unmarshal
 
@@ -11,10 +12,8 @@ import scala.concurrent.duration._
 object Program extends App {
   implicit val system: ActorSystem = ActorSystem()
 
-  val req = HttpRequest(
-    method = HttpMethods.GET,
-    uri = "https://httpbin.org/anything"
-  )
+  val req = HttpRequest(HttpMethods.GET, "https://httpbin.org/anything")
+    .addHeader(RawHeader("Accept", "application/json"))
 
   val res = Await.result(Http().singleRequest(req), 1.second)
   val body = Await.result(Unmarshal(res.entity).to[String], 1.second)
