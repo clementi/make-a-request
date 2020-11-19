@@ -15,11 +15,11 @@ object Program extends App {
   val req = HttpRequest(HttpMethods.GET, "https://httpbin.org/anything")
     .addHeader(RawHeader("Accept", "application/json"))
 
-  val res = Await.result(Http().singleRequest(req), 1.second)
-  val body = Await.result(Unmarshal(res.entity).to[String], 1.second)
-
-  println(body)
-
+  for {
+    res <- Http().singleRequest(req)
+    body <- Unmarshal(res.entity).to[String]
+  } { println(body) }
+  
   Await.result(Http().shutdownAllConnectionPools, 1.second)
   Await.result(system.terminate, 1.second)
 }
