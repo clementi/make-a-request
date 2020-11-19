@@ -7,17 +7,18 @@ import akka.http.scaladsl.model.headers.Accept
 import akka.http.scaladsl.model.{HttpRequest, MediaTypes}
 import akka.http.scaladsl.unmarshalling.Unmarshal
 
-import scala.concurrent.{ExecutionContextExecutor, Future}
+import scala.concurrent.ExecutionContextExecutor
 
 object Program extends App {
   implicit val system: ActorSystem[Nothing] = ActorSystem(Behaviors.empty, "single-request")
   implicit val ec: ExecutionContextExecutor = system.executionContext
 
-  val respFuture = Http().singleRequest(HttpRequest(uri = "https://httpbin.org/anything")
-    .addHeader(Accept(MediaTypes.`application/json`)))
-
-  respFuture.flatMap(resp => Unmarshal(resp.entity).to[String]).flatMap { body =>
+  for {
+    resp <- Http().singleRequest(HttpRequest(uri = "https://httpbin.org/anything")
+      .addHeader(Accept(MediaTypes.`application/json`)))
+    body <- Unmarshal(resp.entity).to[String]
+  } yield {
     println(body)
-    Future(system.terminate())
+    system.terminate()
   }
 }
