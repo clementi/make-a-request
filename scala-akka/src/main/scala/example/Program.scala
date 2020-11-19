@@ -1,25 +1,23 @@
 package example
 
-import akka.actor.ActorSystem
+import akka.actor.typed.ActorSystem
+import akka.actor.typed.scaladsl.Behaviors
 import akka.http.scaladsl.Http
-import akka.http.scaladsl.model.headers.RawHeader
-import akka.http.scaladsl.model.{HttpMethods, HttpRequest}
+import akka.http.scaladsl.model.headers.Accept
+import akka.http.scaladsl.model.{HttpRequest, MediaTypes}
 import akka.http.scaladsl.unmarshalling.Unmarshal
 
-import scala.concurrent.Await
-import scala.concurrent.duration._
+import scala.concurrent.{ExecutionContextExecutor, Future}
 
 object Program extends App {
-  implicit val system: ActorSystem = ActorSystem()
+  implicit val system: ActorSystem[Nothing] = ActorSystem(Behaviors.empty, "single-request")
+  implicit val ec: ExecutionContextExecutor = system.executionContext
 
-  val req = HttpRequest(HttpMethods.GET, "https://httpbin.org/anything")
-    .addHeader(RawHeader("Accept", "application/json"))
+  val respFuture = Http().singleRequest(HttpRequest(uri = "https://httpbin.org/anything")
+    .addHeader(Accept(MediaTypes.`application/json`)))
 
-  for {
-    res <- Http().singleRequest(req)
-    body <- Unmarshal(res.entity).to[String]
-  } { println(body) }
-  
-  Await.result(Http().shutdownAllConnectionPools, 1.second)
-  Await.result(system.terminate, 1.second)
+  respFuture.flatMap(resp => Unmarshal(resp.entity).to[String]).flatMap { body =>
+    println(body)
+    Future(system.terminate())
+  }
 }

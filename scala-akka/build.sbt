@@ -10,8 +10,9 @@ lazy val root = (project in file("."))
     name := "scala-akka",
     libraryDependencies := Seq(
       scalaTest % Test,
-      "com.typesafe.akka" %% "akka-actor" % "2.6.3",
-      "com.typesafe.akka" %% "akka-http" % "10.1.10",
-      "com.typesafe.akka" %% "akka-stream" % "2.6.3"
+      "com.typesafe.akka" %% "akka-actor" % "2.6.10",
+      "com.typesafe.akka" %% "akka-actor-typed" % "2.6.10",
+      "com.typesafe.akka" %% "akka-http" % "10.2.1",
+      "com.typesafe.akka" %% "akka-stream" % "2.6.10"
     )
   )
