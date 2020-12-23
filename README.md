@@ -57,5 +57,6 @@ The following languages have examples:
     * [http4s](http://http4s.org)
     * [play-ws](https://github.com/playframework/play-ws)
     * [scalaj-http](https://github.com/scalaj/scalaj-http)
+    * [sttp](https://sttp.softwaremill.com/)
 * [TypeScript](https://www.typescriptlang.org) on Node.js
     * request-promise
