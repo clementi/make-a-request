@@ -1,4 +1,4 @@
-![Make a request](https://upload.wikimedia.org/wikipedia/commons/5/5b/HTTP_logo.svg)
+![Make a request](https://upload.wikimedia.org/wikipedia/commons/5/5b/HTTP_logo.svg =250x)
 
 # Make a Request
 
