@@ -1,4 +1,4 @@
-![Make a request](https://openclipart.org/download/214907/httpRequest.svg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/HTTP_logo.svg" width="250" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/5/5b/HTTP_logo.svg" alt="Make a request" />
 
 # Make a Request
 

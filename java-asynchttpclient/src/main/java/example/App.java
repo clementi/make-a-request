@@ -13,7 +13,7 @@ import org.asynchttpclient.Response;
 public class App {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         Future<Response> response = asyncHttpClient().prepareGet("http://httpbin.org/anything")
-                .addHeader("Content-Type", "application/json").execute();
+                .addHeader("Accept", "application/json").execute();
 
         System.out.println(response.get().getResponseBody());
     }

@@ -27,7 +27,7 @@ object Example extends App {
   def call(wsClient: StandaloneWSClient, url: String): Future[String] = {
     wsClient
       .url(url)
-      .withHttpHeaders(("Content-Type", "application/json"))
+      .withHttpHeaders(("Accept", "application/json"))
       .get()
       .map(_.body[String])
   }
