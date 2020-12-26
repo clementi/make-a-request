@@ -1,8 +1,6 @@
 package example
 
-import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.duration._
-
+import dispatch.Defaults._
 import dispatch._
 
 object Example extends App {
