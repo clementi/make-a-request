@@ -7,7 +7,8 @@ import dispatch.Defaults._
 import dispatch._
 
 object Example extends App {
-  val service = host("httpbin.org") / "anything"
+  val service =
+    (host("httpbin.org") / "anything").addHeader("Accept", "application/json")
   val response = Http.default(service OK as.String)
 
   response.onComplete {
