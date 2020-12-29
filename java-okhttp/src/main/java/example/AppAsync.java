@@ -12,7 +12,8 @@ public class AppAsync {
     private final static OkHttpClient client = new OkHttpClient();
 
     public static void main(String[] args) {
-        var request = new Request.Builder().url("https://httpbin.org/anything").build();
+        var request = new Request.Builder().url("https://httpbin.org/anything").addHeader("Accept", "application/json")
+                .build();
 
         client.newCall(request).enqueue(new Callback() {
             @Override
