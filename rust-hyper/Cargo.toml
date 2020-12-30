@@ -1,5 +1,5 @@
 [package]
-name = "rust"
+name = "rust-hyper"
 version = "0.1.0"
 authors = ["Jeffrey Pratt <clementi@users.noreply.github.com>"]
 edition = "2018"
