@@ -1,9 +1,10 @@
 package example
 
-import static org.asynchttpclient.Dsl.asyncHttpClient
+import java.util.concurrent.Future
+
 import org.asynchttpclient.Response
 
-import java.util.concurrent.Future
+import static org.asynchttpclient.Dsl.asyncHttpClient
 
 class App {
     static void main(String[] args) {
