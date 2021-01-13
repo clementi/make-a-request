@@ -1,0 +1,32 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/clojure,vscode
+# Edit at https://www.toptal.com/developers/gitignore?templates=clojure,vscode
+
+### Clojure ###
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/lib/
+/classes/
+/target/
+/checkouts/
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
+.cpcache/
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# End of https://www.toptal.com/developers/gitignore/api/clojure,vscode
+
+.clj-kondo
+.lsp
