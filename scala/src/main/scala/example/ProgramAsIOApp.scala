@@ -5,11 +5,12 @@ import cats.effect.IO
 import scala.io.Source
 import scala.io.Codec
 import cats.effect.ExitCode
+import cats.effect.Console.io._
 
 object ProgramAsIOApp extends IOApp {
   override def run(args: List[String]): IO[ExitCode] = for {
     result <- get("http://httpbin.org/anything")
-    _ <- IO { println(result) }
+    _ <- putStrLn(result)
   } yield ExitCode.Success
 
   private def get(url: String): IO[String] = IO {
