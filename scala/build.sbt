@@ -9,6 +9,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "scala-sttp",
     libraryDependencies ++= Seq(
+      "org.typelevel" %% "cats-effect" % "2.3.1",
       scalaTest % Test
     )
   )
