@@ -10,6 +10,8 @@ lazy val root = (project in file("."))
     name := "scala-sttp",
     libraryDependencies ++= Seq(
       "org.typelevel" %% "cats-effect" % "2.3.1",
+      "dev.zio" %% "zio" % "1.0.4",
+      "io.monix" %% "monix" % "3.2.2",
       scalaTest % Test
     )
   )
