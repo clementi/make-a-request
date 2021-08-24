@@ -4,6 +4,6 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="RestSharp" Version="106.0.1" />
+    <PackageReference Include="RestSharp" Version="106.12.0" />
   </ItemGroup>
 </Project>
