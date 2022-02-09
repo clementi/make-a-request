@@ -9,4 +9,4 @@
                  #:method "GET"
                  #:headers (list "Accept: application/json")))
 
-(display (read-string 500 port))
+(display (port->string port))
