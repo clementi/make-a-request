@@ -8,4 +8,4 @@ edition = "2018"
 
 [dependencies]
 tokio = { version = "0.2.21", features = ["macros", "io-std"] }
-hyper = "0.13.5"
+hyper = "0.14.12"
