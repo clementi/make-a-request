@@ -11,7 +11,8 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       "org.asynchttpclient" % "async-http-client" % "2.12.1",
       scalaTest % Test
-    )
+    ),
+    fork in run := true
   )
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
