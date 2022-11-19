@@ -1,6 +1,0 @@
-aiohttp==3.7.4
-async-timeout==2.0.0
-chardet==3.0.4
-idna==2.6
-multidict==3.3.2
-yarl==0.18.0
