@@ -22,7 +22,7 @@ The following languages have examples:
     * [axios](https://github.com/axios/axios)
     * [request-promise](https://github.com/request/request-promise)
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
-    * [RestSharp](http://restsharp.org)
+    * [RestSharp](http://restsharp.dev)
     * System.Net
 * [Dart](http://dartlang.org)
 * [Elixir](http://elixir-lang.org)
